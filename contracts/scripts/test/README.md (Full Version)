@@ -1,0 +1,22 @@
+# SolCipher Oracle: Cross-Chain Price Feed for Reactive Network
+
+## Overview
+Mirrors Chainlink price feeds (e.g., ETH/USD from Sepolia) to Reactive Network using reactive event subscriptions. Exposes `AggregatorV3Interface` for dApps.
+
+Bounty: https://dorahacks.io/hackathon/bounty/1305
+
+## Quick Start
+1. `npm install`
+2. Deploy: `npx hardhat run scripts/deploy.js --network kopli` (get testnet ETH from faucet: https://kopli-faucet.reactive.network)
+3. Test: `npx hardhat test`
+4. Usage: dApps call `latestRoundData()` on deployed contract.
+
+## Reactive Integration
+- Extend `updatePrice` with Reactive's `ISubscriptionManager` to auto-subscribe to origin events.
+- Docs: https://dev.reactive.network
+
+## Demo
+Deployed on Kopli: [ADD ADDRESS AFTER DEPLOY]
+Verify prices match origin Chainlink aggregator.
+
+License: MIT
