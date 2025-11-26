@@ -1,0 +1,11 @@
+solcipher-oracle/
+├── contracts/
+│   └── SolCipher.sol
+├── scripts/
+│   └── deploy.js
+├── test/
+│   └── SolCipher.test.js
+├── hardhat.config.js
+├── package.json
+├── README.md
+└── .gitignore  (auto-generated with Node template)
