@@ -1,0 +1,5 @@
+git clone https://github.com/yourusername/solcipher-oracle.git
+cd solcipher-oracle
+npm init -y  # Initializes package.json
+npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox @openzeppelin/contracts @chainlink/contracts
+npx hardhat init  # Choose "Create a JavaScript project" for simplicity
